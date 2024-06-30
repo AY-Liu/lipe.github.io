@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="LIPE: Learning Personalized Identity Prior for
+  Non-rigid Image Editing"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-svg.min.js" crossorigin="anonymous"></script>
+
+<!-- Include GSAP and Draggable library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+
+  <style>
+      .scroll-container {
+        width: 100%; /* 调整为您需要的宽度 */
+        height: 800px; /* 可调整高度 */
+        overflow: hidden; /* 隐藏滚动条 */
+        margin: auto; /* 水平居中 */
+        position: relative; /* 定位相对 */
+        border: 2px solid #ddd; /* 可选：添加边框 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 可选：添加阴影 */
+      }
+
+      .drag-img {
+        width: 100%; /* 图片宽度完全填充容器 */
+        cursor: grab; /* 鼠标悬停时显示抓手图标 */
+        transition: transform 0.1s, box-shadow 0.1s; /* 添加过渡效果 */
+      }
+
+      .drag-img:active {
+        cursor: grabbing; /* 鼠标点击时的图标 */
+        transform: scale(1.01); /* 放大图片 */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 加强阴影 */
+      }
+    
+  </style>
+
+
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LIPE: Learning Personalized Identity Prior for
+              Non-rigid Image Editing</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/AY-Liu" target="_blank">Aoyang Liu</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://fqnchina.github.io/" target="_blank">Qingnan Fan</a><sup>2</sup>,
+                </span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Shuai Qin</a><sup>2</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Hong Gu</a><sup>2</sup>,
+                  </span>
+                    <span class="author-block">
+                      <a href="https://andytang15.github.io/" target="_blank">Yansong Tang</a><sup>1,†</sup>
+                  </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tsinghua University,</span>
+                    <span class="author-block"><sup>2</sup>VIVO,</span>
+                    <span class="eql-cntrb"><small><br><sup>†</sup><a
+                      href="mailto:tang.yansong@sz.tsinghua.edu.cn">Corresponding author.</a></small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2406.17236" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2406.17236" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                  </a>
+              </span>
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://drive.google.com/file/d/1CYio0LQdVdQrn9sf3Kbjhy1OFAwnw0Nx/view?usp=drive_link" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/teaser.png" id="tree" alt="Tree Image" style="width: 100%; height: auto;">
+      <h2 class="subtitle">
+        Given a few reference images of the same identity, our framework learns a personalized identity prior and applies diverse non-rigid image editing for a test image guided by a textual description, leading to high identity-preserved edited results. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Although recent years have witnessed significant advancements in image editing thanks to the remarkable progress of text-to-image diffusion models, the problem of non-rigid image editing still presents its complexities and challenges. Existing methods often fail to achieve consistent results due to the absence of unique identity characteristics. In this paper, we present LIPE, a novel framework designed to learn the personalized identity prior from a limited set of images of the same subject, and subsequently employ the learned prior for non-rigid image editing. Our approach comprises two functional designs, EDiting-Oriented personalized identity Prior (EDOP) and Non-rigid Image editing via identity-aware MAsk blend (NIMA), to address the prior learning and image editing challenges, respectively. Experimental results demonstrate the advantages of our approach in various editing scenarios over the past related leading methods in both qualitative and quantitative ways.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!--Examples-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Results</h2>
+      <img loading="lazy" src="static/images/head.png" alt="head" />
+      <div class="scroll-container">
+        <img class="drag-img" loading="lazy" src="static/images/examples.png" alt="exam" />
+      </div>
+      <h2></h2>
+    </div>
+  </div>
+</section>
+
+<!-- Comp -->
+<section class="hero is-small">
+
+
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Comparison to Other Methods</h2>
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-image1">
+        <img loading="lazy" src="static/images/comp1.png" alt="head" style="display: block; margin: auto; width: 100%;"/>
+        </div>
+
+        <div class="item item-image2">
+        <img loading="lazy" src="static/images/comp2.png" alt="head" style="display: block; margin: auto; width: 80%;"/>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{liu2024lipe,
+        title={LIPE: Learning Personalized Identity Prior for Non-rigid Image Editing},
+        author={Liu, Aoyang and Fan, Qingnan and Qin, Shuai and Gu, Hong and Tang, Yansong},
+        journal={arXiv preprint arXiv:2406.17236},
+        year={2024}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const img = document.querySelector('.drag-img');
+
+  Draggable.create(img, {
+    type: 'y', // 仅允许垂直拖动
+    bounds: '.scroll-container', // 限制拖动范围在容器内
+    inertia: true, // 惯性拖动
+    onPress: function() {
+      gsap.to(img, { 
+        scale: 1.05, 
+        rotation: 0.5, 
+        boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)' 
+      });
+    },
+    onRelease: function() {
+      gsap.to(img, { 
+        scale: 1, 
+        rotation: 0, 
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' 
+      });
+    }
+  });
+});
+</script>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Statcounter tracking code -->
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <!-- End of Statcounter Code -->
+  </body>
+  </html>
